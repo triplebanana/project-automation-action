@@ -1,0 +1,19 @@
+{
+  "name": "project-automation-action",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build index.js"
+  },
+  "author": "Jinho Bang",
+  "license": "MPL-2.0",
+  "type": "module",
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "github-project": "^5.4.1",
+    "package.json": "^2.0.1"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.2"
+  }
+}
