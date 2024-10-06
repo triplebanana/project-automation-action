@@ -1,0 +1,17 @@
+# Copyright 2024 The Triple Banana Authors. All rights reserved.
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at https://mozilla.org/MPL/2.0/.
+
+name: "project-automation-action"
+author: "Jinho Bang"
+inputs:
+  token:
+    description: Personal access token or an OAuth token. the write:org scope is required for read-write access.
+    required: true
+  script:
+    description: Script for project automation
+    required: true
+runs:
+  using: "node20"
+  main: "dist/index.js"
